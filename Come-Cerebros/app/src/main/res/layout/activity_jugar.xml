@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.app.game.comecerebros.JugarActivity">
+
+    <TextView
+        android:id="@+id/etiquetaOpciones"
+        style="@style/Base.TextAppearance.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:text="ESCOJA UNA OPCIÓN"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF4840E3"
+        android:textSize="30dp"
+        tools:ignore="Deprecated,HardcodedText,SpUsage,TextViewEdits" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etiquetaOpciones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/opciones"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/botonFacil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonAvanzado"
+        android:layout_alignStart="@+id/botonAvanzado"
+        android:layout_alignLeft="@+id/botonAvanzado"
+        android:layout_alignEnd="@+id/botonAvanzado"
+        android:layout_alignRight="@+id/botonAvanzado"
+        android:background="#4840e3"
+        android:text="NIVEL FACIL"
+        android:textColor="#FFF4F41E"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/botonAvanzado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonInstrucciones"
+        android:layout_alignStart="@+id/botonInstrucciones"
+        android:layout_alignLeft="@+id/botonInstrucciones"
+        android:layout_alignEnd="@+id/botonInstrucciones"
+        android:layout_alignRight="@+id/botonInstrucciones"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="#4840e3"
+        android:text="NIVEL AVANZADO"
+        android:textColor="#FFF4F41E"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/botonInstrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonVolver_J"
+        android:layout_alignStart="@+id/etiquetaOpciones"
+        android:layout_alignLeft="@+id/etiquetaOpciones"
+        android:layout_alignEnd="@+id/etiquetaOpciones"
+        android:layout_alignRight="@+id/etiquetaOpciones"
+        android:layout_centerVertical="true"
+        android:background="#4840e3"
+        android:text="INSTRUCCIONES?"
+        android:textColor="#FFF4F41E"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/botonVolver_J"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etiquetaOpciones"
+        android:layout_alignLeft="@+id/etiquetaOpciones"
+        android:layout_alignEnd="@+id/etiquetaOpciones"
+        android:layout_alignRight="@+id/etiquetaOpciones"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="#4840e3"
+        android:text="VOLVER"
+        android:textColor="#FFF4F41E"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

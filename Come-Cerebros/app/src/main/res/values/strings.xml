@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">COME CEREBROS</string>
+    <string name="botonEmpezar">Empezar</string>
+    <string name="botonPausar">Pausar</string>
+    <string name="botonReiniciar">Reiniciar</string>
+    <string name="Cronos">Cronos</string>
+</resources>

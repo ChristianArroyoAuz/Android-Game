@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.app.game.comecerebros.InstruccionesActivity">
+
+    <Button
+        android:id="@+id/botonVolver_QS"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#4840e3"
+        android:text="Volver"
+        android:textColor="#FFF4F41E"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="INSTRUCCIONES"
+        android:textColor="#FF4840E3"
+        android:textSize="34dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/etiquetaInstrcciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonVolver_QS"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scrollbars="vertical"
+        android:text="Te damos la bienvenida, jugador matematico.\n\n
+Te ofrecemos un juego de operaciones matematicas, que pondra a prueba de agilidad matematica, con operacines basicas de matematica.\n\n
+El juego tiene dos opciones de juego: Modo Facil y Modo Avanzado.\n
+Modo Facil: Tendras un limite de un minuto para realizar operaciones sencillas de matematicas.\n
+Modo Avanzado: Tendras un limite de un minuto para realizar operacione dificiles de matematicas.\n\n
+En ambos casos,tendras que presionar el boton 'Empezar' para que el tiempo comience a correr.\n\n
+Dispondras de un teclado númerico para ingresar la respuesta, en caso de que tu respuesta sea un número negativo, deberas ingresar tu respuesta y luego presionar el boton con el signo menos.\n\n
+Presiona 'Verified' para validar tu respuesta, esto marcara tu respuesta como buena o mala en la parte superior izquierda.\n\n
+Presiona 'Corregir' para poder borrar tu respuesta desde el ultimo digito ingresado.\n\n
+Si deseas salir del juego puedes presionar el boton 'Volver' en el momento que tu desees."
+        android:textSize="22dp"
+        tools:ignore="HardcodedText,SpUsage" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.game.comecerebros">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name="com.app.game.comecerebros.PresentacionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.game.comecerebros.QuienesSomosActivity"></activity>
+        <activity android:name="com.app.game.comecerebros.JugarActivity"></activity>
+        <activity android:name="com.app.game.comecerebros.FacilActivity"></activity>
+        <activity android:name="com.app.game.comecerebros.AvanzadoActivity"></activity>
+        <activity android:name="com.app.game.comecerebros.InstruccionesActivity"></activity>
+    </application>
+</manifest>

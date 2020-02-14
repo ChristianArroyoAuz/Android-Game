@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.app.game.comecerebros.FacilActivity">
+
+    <ImageButton
+        android:id="@+id/botonVolver_F"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:src="@drawable/volver"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/botonEmpezar"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/botonVolver_F"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:src="@drawable/empezar"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/botonValidar"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/botonCorregir"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:src="@drawable/verificar"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/botonCorregir"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/imagenDos"
+        android:layout_alignEnd="@+id/imagenTres"
+        android:layout_alignRight="@+id/imagenTres"
+        android:background="@null"
+        android:src="@drawable/corregir"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenUno"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imagenDos"
+        android:layout_toStartOf="@+id/imagenDos"
+        android:layout_toLeftOf="@+id/imagenDos"
+        android:src="@drawable/uno"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenDos"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imagenTres"
+        android:layout_toStartOf="@+id/imagenTres"
+        android:layout_toLeftOf="@+id/imagenTres"
+        android:src="@drawable/dos"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenTres"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/imagenSeis"
+        android:layout_alignStart="@+id/imagenSeis"
+        android:layout_alignLeft="@+id/imagenSeis"
+        android:src="@drawable/tres"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenCuatro"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/imagenSiete"
+        android:layout_toStartOf="@+id/imagenCinco"
+        android:layout_toLeftOf="@+id/imagenCinco"
+        android:src="@drawable/cuatro"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenCinco"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/imagenOcho"
+        android:layout_toStartOf="@+id/imagenNueve"
+        android:layout_toLeftOf="@+id/imagenNueve"
+        android:src="@drawable/cinco"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenSeis"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/imagenNueve"
+        android:layout_alignLeft="@+id/imagenNueve"
+        android:layout_alignTop="@+id/imagenCinco"
+        android:src="@drawable/seis"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenSiete"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imagenOcho"
+        android:layout_toStartOf="@+id/imagenDos"
+        android:layout_toLeftOf="@+id/imagenDos"
+        android:src="@drawable/siete"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenOcho"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/imagenCero"
+        android:layout_alignStart="@+id/imagenCero"
+        android:layout_alignLeft="@+id/imagenCero"
+        android:src="@drawable/ocho"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenNueve"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imagenOcho"
+        android:layout_toEndOf="@+id/imagenOcho"
+        android:layout_toRightOf="@+id/imagenOcho"
+        android:src="@drawable/nueve"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imagenCero"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/botonVolver_F"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cero"
+        tools:ignore="ContentDescription" />
+
+    <Chronometer
+        android:id="@+id/etiquetaCronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@+id/botonEmpezar"
+        android:layout_toLeftOf="@+id/botonEmpezar"
+        android:textSize="50dp"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/imagenOperador"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/etiquetaCronometro"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/mas"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/etiquetaNumeroUno"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/etiquetaNumeroDos"
+        android:layout_toStartOf="@+id/etiquetaNumeroDos"
+        android:layout_toLeftOf="@+id/etiquetaNumeroDos"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/rnd_cero"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/etiquetaNumeroDos"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imagenOperador"
+        android:layout_toStartOf="@+id/imagenOperador"
+        android:layout_toLeftOf="@+id/imagenOperador"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/rnd_cero"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/etiquetaNumeroTres"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imagenOperador"
+        android:layout_toEndOf="@+id/imagenOperador"
+        android:layout_toRightOf="@+id/imagenOperador"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/rnd_cero"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/etiquetaNumeroCuatro"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/etiquetaNumeroTres"
+        android:layout_toEndOf="@+id/etiquetaNumeroTres"
+        android:layout_toRightOf="@+id/etiquetaNumeroTres"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/rnd_cero"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/etiquetaIgual"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/botonValidar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:src="@drawable/igual"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/etiquetaRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etiquetaIgual"
+        android:layout_alignEnd="@+id/botonCorregir"
+        android:layout_alignRight="@+id/botonCorregir"
+        android:layout_toRightOf="@+id/etiquetaIgual"
+        android:text="0"
+        android:textSize="35dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <ImageView
+        android:id="@+id/imagenBienMal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etiquetaNumeroCuatro"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/etiquetaNumeroCuatro"
+        android:layout_toRightOf="@+id/etiquetaNumeroCuatro"
+        android:src="@drawable/bien_1"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/botonMenos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/botonVolver_F"
+        android:layout_alignEnd="@+id/etiquetaNumeroUno"
+        android:layout_alignRight="@+id/etiquetaNumeroUno"
+        android:src="@drawable/menos"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
